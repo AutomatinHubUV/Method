@@ -1,0 +1,42 @@
+int b = 10;
+
+	public void test() {
+		System.out.println("Non - static method 1");
+	}
+
+	public void display() {
+		System.out.println("Non - static method 2");
+	}
+
+	static void addition() {
+		System.out.println("This is static method");
+	}
+
+	public static void main(String[] args) {
+
+		addition();
+		nonstaticmethod.addition();
+		// third way to call an static method by - useing object
+
+		// how we can call non static method
+		// we can call by useing object
+		// way to create an object - new classname();
+
+		nonstaticmethod var = new nonstaticmethod();
+		var.addition();
+
+		// nonstaticmethod = class
+		// var - object refrence variable
+		// new - keyword /operator in java
+		// nonstaticmethod() - default constructor
+
+		var.display();
+		var.test();
+		
+		nonstaticmethod var1 = new nonstaticmethod();
+		
+		var1.display();
+		var1.test();
+		var1.addition();
+	//	System.out.println(var1.b);
+		
